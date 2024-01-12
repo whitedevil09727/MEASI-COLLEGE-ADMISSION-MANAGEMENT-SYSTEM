@@ -1,0 +1,11 @@
+.container{
+    background-color: brown;
+}
+.x-subscribe-form fieldset:last-child {
+    width: 25%;
+}
+
+.x-subscribe-form {
+    display: flex;
+    justify-content: center;
+}

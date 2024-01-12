@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+            background-color: #00483D;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #8B1414;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+
+        form h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button[type="submit"] {
+            background-color: #00483D;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #00241D;
+        }
+    </style>
+</head>
+<body>
+    <form
+        action="https://formspree.io/f/mqkvgwnd"
+        method="POST"
+    >
+        <h2>FOR ANY QUERY CONTACT US</h2>
+        <label>
+            Your email:
+            <input type="email" name="email" required>
+        </label>
+        <label>
+            Your message:
+            <textarea name="message" rows="5" required></textarea>
+        </label>
+         <CENTER>
+            <button type="submit">Send</button>
+         </CENTER>
+    </form>
+</body>
+</html>
